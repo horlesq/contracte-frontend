@@ -23,7 +23,8 @@ export default function RootLayout({ children }) {
         <AuthProvider>
           {/* Navbar will be client component */}
           <Navbar />
-          <main className="flex-grow container mx-auto p-6 flex flex-col items-center justify-center">
+          {/* Removed p-6 from main. Content components like HeroSection manage their own internal padding. */}
+          <main className="flex-grow flex flex-col">
             {children} {/* This will render the specific page content */}
           </main>
           <Footer />

@@ -20,8 +20,8 @@ export const Navbar = () => {
     };
 
     return (
-        <nav className="bg-blue-600 p-4 shadow-lg sticky top-0 z-50">
-            <div className="container mx-auto flex justify-between items-center">
+        <nav className="bg-blue-600 py-4 shadow-lg sticky top-0 z-50">
+            <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center space-x-10">
                     <Link
                         href="/"
@@ -41,7 +41,7 @@ export const Navbar = () => {
                                 d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                             />
                         </svg>
-                        Contracte Juridice
+                        ContracteRO
                     </Link>
 
                     <div className="hidden md:flex items-center space-x-6">

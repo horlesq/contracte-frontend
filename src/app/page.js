@@ -3,6 +3,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import HeroSection from "../components/Hero"; 
+import BenefitsSection from "@/components/Benefits";
 
 export default function HomePage() {
     const router = useRouter();
@@ -10,7 +11,7 @@ export default function HomePage() {
     return (
         <div>
             <HeroSection />
-            {/* You can add other components or content here */}
+            <BenefitsSection />
         </div>
     );
 }
