@@ -71,14 +71,14 @@ export default function BenefitsSection() {
 
     return (
         <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
                         De ce să cumperi de aici?
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Oferim soluții juridice complete, accesibile și
-                        profesionale pentru toate nevoile tale contractuale
+                        Oferim modele de contracte clare, ușor de folosit și
+                        potrivite pentru orice tip de tranzacție sau colaborare.
                     </p>
                 </div>
 
@@ -89,8 +89,8 @@ export default function BenefitsSection() {
                             <Image
                                 src="/benefits-image.png"
                                 alt="Imagine reprezentativă pentru beneficii"
-                                width={600} // Adjust width as needed
-                                height={400} // Adjust height as needed
+                                width={600}
+                                height={400}
                                 className="w-full h-auto"
                                 onError={(e) => {
                                     e.target.onerror = null;
@@ -128,7 +128,7 @@ export default function BenefitsSection() {
                     </div>
                 </div>
 
-                <div className="text-center mt-16">
+                {/* <div className="text-center mt-16">
                     <div className="bg-blue-600 text-white py-6 px-8 rounded-2xl shadow-xl inline-block transform hover:scale-105 transition-transform duration-300">
                         <p className="text-2xl font-bold mb-2">
                             Peste 1000+ de contracte disponibile
@@ -137,7 +137,7 @@ export default function BenefitsSection() {
                             Toate adaptate legislației românești
                         </p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );

@@ -4,7 +4,7 @@ import React from "react";
 export default function HeroSection() {
     return (
         <section className="relative bg-gradient-to-br from-blue-50 to-white py-24 md:py-36 overflow-hidden">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between relative z-10">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl flex flex-col md:flex-row items-center justify-between relative z-10">
                 {/* Text Content */}
                 <div className="w-full md:w-1/2 text-center md:text-left mb-12 md:mb-0 pr-0 md:pr-12">
                     <h1 className="text-5xl text-gray-800 md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 drop-shadow-sm">

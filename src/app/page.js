@@ -2,8 +2,9 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
-import HeroSection from "../components/Hero"; 
+import HeroSection from "../components/Hero";
 import BenefitsSection from "@/components/Benefits";
+import PreviewSection from "@/components/Preview";
 
 export default function HomePage() {
     const router = useRouter();
@@ -12,6 +13,7 @@ export default function HomePage() {
         <div>
             <HeroSection />
             <BenefitsSection />
+            <PreviewSection />
         </div>
     );
 }

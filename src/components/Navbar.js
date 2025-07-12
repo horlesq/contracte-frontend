@@ -21,7 +21,7 @@ export const Navbar = () => {
 
     return (
         <nav className="bg-blue-600 py-4 shadow-lg sticky top-0 z-50">
-            <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl flex justify-between items-center">
                 <div className="flex items-center space-x-10">
                     <Link
                         href="/"
