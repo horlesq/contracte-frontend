@@ -9,7 +9,7 @@ export const Navbar = () => {
     const { user, logout } = useAuth();
     const router = useRouter();
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for mobile menu
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const dropdownRef = useRef(null);
     const mobileMenuRef = useRef(null);
 
@@ -50,7 +50,7 @@ export const Navbar = () => {
     }, []);
 
     return (
-        <nav className="bg-blue-600 py-4 shadow-lg sticky top-0 z-50">
+        <nav className="bg-blue-600 py-4 shadow-lg absolute top-0 left-0 right-0 z-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl flex justify-between items-center">
                 <div className="flex items-center space-x-10">
                     <Link
@@ -76,7 +76,7 @@ export const Navbar = () => {
 
                     {/* Desktop Navigation Links */}
                     <div className="hidden md:flex items-center space-x-6">
-                        <NavLink href="/contracte">Contracte</NavLink>
+                        <NavLink href="/contracts">Contracte</NavLink>
 
                         <div className="relative" ref={dropdownRef}>
                             <button
@@ -138,7 +138,6 @@ export const Navbar = () => {
                             )}
                         </div>
 
-                        {/* Removed "Despre" link */}
                         <NavLink href="/faq">FAQ</NavLink>
                         <NavLink href="/contact">Contact</NavLink>
                     </div>
@@ -216,7 +215,7 @@ export const Navbar = () => {
                     )}
 
                     <Link
-                        href="/contracte"
+                        href="/contracts"
                         className="bg-white text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out px-6 py-2 rounded-md font-semibold shadow-sm"
                     >
                         Cumpără Acum
@@ -231,7 +230,7 @@ export const Navbar = () => {
                     ref={mobileMenuRef}
                 >
                     <NavLinkMobile
-                        href="/contracte"
+                        href="/contracts"
                         onClick={() => setIsMobileMenuOpen(false)}
                     >
                         Contracte
@@ -305,7 +304,6 @@ export const Navbar = () => {
                             </div>
                         )}
                     </div>
-                    {/* Removed "Despre" link */}
                     <NavLinkMobile
                         href="/faq"
                         onClick={() => setIsMobileMenuOpen(false)}
@@ -346,7 +344,7 @@ export const Navbar = () => {
                         </NavLinkMobile>
                     )}
                     <Link
-                        href="/contracte"
+                        href="/contracts"
                         className="bg-white text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out px-8 py-3 rounded-full font-semibold shadow-sm text-xl mt-4"
                         onClick={() => setIsMobileMenuOpen(false)}
                     >
